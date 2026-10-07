@@ -63,6 +63,7 @@ export default function RootLayout({
       className={`${sora.variable} scroll-smooth`}
     >
       <body className="min-h-screen bg-[#0B0D12] text-[#F5F5F7] antialiased selection:bg-[#0060F0]/25 selection:text-[#F5F5F7]">
+        <div className="grain-overlay" aria-hidden="true" />
         {children}
       </body>
     </html>

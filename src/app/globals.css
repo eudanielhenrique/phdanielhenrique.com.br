@@ -9,15 +9,20 @@
 :root {
   --bg: #0B0D12;
   --surface: #12151B;
-  --surface2: #181C24;
+  --surface2: #181C25;
   --border: #22262F;
-  --border-hover: #2E333D;
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(0, 96, 240, 0.5);
   --text: #F5F5F7;
   --text-muted: #8A8F99;
   --text-dim: #565B66;
   --accent: #0060F0;
   --accent-hover: #0050D0;
-  --accent-subtle: rgba(0, 96, 240, 0.12);
+  --accent-glow: rgba(0, 96, 240, 0.16);
+
+  /* VibeCurb / Apple Motion Tokens */
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 html {
@@ -32,16 +37,65 @@ body {
   font-family: var(--font-sora), sans-serif;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .font-display {
   font-family: var(--font-display);
+  letter-spacing: -0.03em;
+}
+
+/* Atmospheric Noise Grain (VibeCurb standard) */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.028;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
 /* Subtle dot grid pattern */
 .dots-grid {
-  background-image: radial-gradient(rgba(245, 245, 247, 0.05) 1px, transparent 1px);
-  background-size: 28px 28px;
+  background-image: radial-gradient(rgba(245, 245, 247, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Awwwards Card Hairline Top Highlight */
+.card-hairline {
+  position: relative;
+}
+.card-hairline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  pointer-events: none;
+}
+
+/* Tactile Physics Transitions */
+.tactile-btn {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.tactile-btn:hover {
+  transform: translateY(-2px);
+}
+.tactile-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.card-hover {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 96, 240, 0.4);
+  box-shadow: 0 16px 36px -10px rgba(0, 96, 240, 0.12), 0 0 0 1px rgba(0, 96, 240, 0.25);
 }
 
 /* Custom Scrollbar */
@@ -61,6 +115,15 @@ body {
 }
 
 ::selection {
-  background: rgba(0, 96, 240, 0.25);
+  background: rgba(0, 96, 240, 0.3);
   color: #F5F5F7;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

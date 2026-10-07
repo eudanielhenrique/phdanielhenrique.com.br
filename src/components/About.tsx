@@ -39,27 +39,27 @@ export function About() {
               </p>
             </div>
 
-            {/* Metrics like reference */}
-            <div className="flex flex-wrap items-center gap-10 pt-2 pb-4">
-              <div>
-                <div className="font-display text-2xl sm:text-3xl font-bold text-[#0060F0]">
+            {/* Metrics with VibeCurb architectural stats */}
+            <div className="grid grid-cols-3 gap-4 pt-2 pb-4">
+              <div className="card-hairline p-4 rounded-xl bg-[#12151B] border border-[#22262F]">
+                <div className="font-display text-2xl sm:text-3xl font-bold text-[#0060F0] tracking-tight">
                   Desde 2016
                 </div>
-                <div className="text-xs text-[#8A8F99] mt-0.5">Programando</div>
+                <div className="text-xs text-[#8A8F99] mt-1">Programando</div>
               </div>
 
-              <div>
-                <div className="font-display text-2xl sm:text-3xl font-bold text-[#0060F0]">
+              <div className="card-hairline p-4 rounded-xl bg-[#12151B] border border-[#22262F]">
+                <div className="font-display text-2xl sm:text-3xl font-bold text-[#0060F0] tracking-tight">
                   +40 Projetos
                 </div>
-                <div className="text-xs text-[#8A8F99] mt-0.5">Sistemas entregues</div>
+                <div className="text-xs text-[#8A8F99] mt-1">Sistemas entregues</div>
               </div>
 
-              <div>
-                <div className="font-display text-2xl sm:text-3xl font-bold text-[#0060F0]">
+              <div className="card-hairline p-4 rounded-xl bg-[#12151B] border border-[#22262F]">
+                <div className="font-display text-2xl sm:text-3xl font-bold text-[#0060F0] tracking-tight">
                   4 Startups
                 </div>
-                <div className="text-xs text-[#8A8F99] mt-0.5">Fundadas</div>
+                <div className="text-xs text-[#8A8F99] mt-1">Fundadas</div>
               </div>
             </div>
 
@@ -72,7 +72,7 @@ export function About() {
                 {coreSkills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3.5 py-1.5 rounded-full text-xs font-mono bg-[#12151B] border border-[#22262F] text-[#F5F5F7] hover:border-[#0060F0]/50 transition-colors"
+                    className="px-3.5 py-1.5 rounded-full text-xs font-mono bg-[#12151B] border border-[#22262F] text-[#F5F5F7] hover:border-[#0060F0]/50 hover:bg-[#181C25] transition-all cursor-default"
                   >
                     {skill}
                   </span>
@@ -83,7 +83,7 @@ export function About() {
 
           {/* Right Column: Clean Developer Photo with subtle ambient glow */}
           <div className="lg:col-span-5 flex items-center justify-center lg:justify-end">
-            <div className="relative w-full max-w-sm aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 group shadow-2xl">
+            <div className="card-hairline relative w-full max-w-sm aspect-[4/5] rounded-3xl overflow-hidden border border-[#22262F] group shadow-2xl">
               {/* Subtle blue glow behind avatar */}
               <div className="absolute -inset-4 bg-[#0060F0]/15 rounded-3xl blur-2xl pointer-events-none -z-10" />
 
@@ -92,7 +92,7 @@ export function About() {
                 alt="Daniel Henrique"
                 fill
                 sizes="(max-width: 768px) 100vw, 400px"
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
                 priority
               />
             </div>

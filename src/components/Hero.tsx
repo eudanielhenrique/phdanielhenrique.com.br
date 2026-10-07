@@ -7,19 +7,21 @@ export function Hero() {
   const { personal } = portfolioData;
 
   return (
-    <section className="relative min-h-[88vh] pt-36 pb-20 flex items-center overflow-hidden">
-      {/* Background Dot Pattern */}
-      <div className="absolute inset-0 dots-grid pointer-events-none opacity-30" />
+    <section className="relative min-h-[90vh] pt-36 pb-20 flex items-center overflow-hidden">
+      {/* Background Dot Pattern & Atmospheric Scrim */}
+      <div className="absolute inset-0 dots-grid pointer-events-none opacity-25" />
+      <div className="absolute top-1/4 left-1/4 w-[480px] h-[480px] bg-[#0060F0]/[0.07] rounded-full blur-[120px] pointer-events-none -z-10" />
 
       <div className="max-w-6xl mx-auto px-6 sm:px-10 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column: Natural Human Copy */}
           <div className="lg:col-span-7 space-y-6 text-left">
-            <span className="text-xs font-mono text-[#0060F0] tracking-wide block">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#12151B] border border-[#22262F] text-xs font-mono text-[#0060F0]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0060F0] animate-pulse" />
               desenvolvedor full stack & founder
-            </span>
+            </div>
 
-            <h1 className="font-display text-4xl sm:text-6xl lg:text-[4.2rem] font-bold tracking-tight text-[#F5F5F7] leading-[1.1]">
+            <h1 className="font-display text-4xl sm:text-6xl lg:text-[4.2rem] font-bold tracking-[-0.035em] text-[#F5F5F7] leading-[1.06]">
               Eu construo sistemas e automatizo processos que geram resultado.
             </h1>
 
@@ -69,14 +71,14 @@ export function Hero() {
                 href={personal.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-7 py-3 rounded-full bg-[#0060F0] hover:bg-[#0050D0] text-white font-medium text-sm transition-all hover:scale-[1.02] active:scale-95 shadow-md shadow-[#0060F0]/20"
+                className="tactile-btn inline-flex items-center justify-center px-7 py-3 rounded-full bg-[#0060F0] hover:bg-[#0050D0] text-white font-medium text-sm shadow-lg shadow-[#0060F0]/25 border border-[#0060F0]/50"
               >
                 Conversar no WhatsApp
               </a>
 
               <a
                 href="#sobre"
-                className="inline-flex items-center justify-center px-7 py-3 rounded-full bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 hover:border-white/20 text-[#F5F5F7] font-medium text-sm transition-all active:scale-95"
+                className="tactile-btn inline-flex items-center justify-center px-7 py-3 rounded-full bg-[#12151B] hover:bg-[#181C25] border border-[#22262F] hover:border-white/20 text-[#F5F5F7] font-medium text-sm"
               >
                 Conhecer mais
               </a>

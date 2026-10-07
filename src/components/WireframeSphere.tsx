@@ -60,6 +60,27 @@ export function WireframeSphere() {
     ];
     edges.push(...extraEdges);
 
+    let targetSpeedX = 0.003;
+    let targetSpeedY = 0.005;
+    let currentSpeedX = 0.003;
+    let currentSpeedY = 0.005;
+
+    const handlePointerMove = (e: MouseEvent) => {
+      const rect = canvas.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      targetSpeedY = x * 0.015;
+      targetSpeedX = -y * 0.015;
+    };
+
+    const handlePointerLeave = () => {
+      targetSpeedX = 0.003;
+      targetSpeedY = 0.005;
+    };
+
+    window.addEventListener("mousemove", handlePointerMove, { passive: true });
+    window.addEventListener("mouseleave", handlePointerLeave, { passive: true });
+
     const render = () => {
       ctx.clearRect(0, 0, size, size);
 
@@ -67,8 +88,11 @@ export function WireframeSphere() {
       const centerY = size / 2;
       const radius = size * 0.38;
 
-      angleX += 0.003;
-      angleY += 0.005;
+      currentSpeedX += (targetSpeedX - currentSpeedX) * 0.05;
+      currentSpeedY += (targetSpeedY - currentSpeedY) * 0.05;
+
+      angleX += currentSpeedX;
+      angleY += currentSpeedY;
 
       const cosX = Math.cos(angleX);
       const sinX = Math.sin(angleX);
@@ -109,11 +133,11 @@ export function WireframeSphere() {
         ctx.stroke();
       });
 
-      // Draw vertices points
+      // Draw vertices points with subtle glow
       projected.forEach((p) => {
         ctx.beginPath();
-        ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(0, 96, 240, ${Math.max(0.25, (p.z + 1) * 0.55)})`;
+        ctx.arc(p.x, p.y, 2.2, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0, 96, 240, ${Math.max(0.3, (p.z + 1) * 0.6)})`;
         ctx.fill();
       });
 
@@ -124,16 +148,18 @@ export function WireframeSphere() {
 
     return () => {
       cancelAnimationFrame(animationFrameId);
+      window.removeEventListener("mousemove", handlePointerMove);
+      window.removeEventListener("mouseleave", handlePointerLeave);
     };
   }, []);
 
   return (
-    <div className="relative w-full max-w-[440px] aspect-square flex items-center justify-center select-none">
-      <div className="absolute inset-0 bg-[#0060F0]/12 blur-[85px] rounded-full pointer-events-none" />
+    <div className="relative w-full max-w-[440px] aspect-square flex items-center justify-center select-none group">
+      <div className="absolute inset-0 bg-[#0060F0]/12 blur-[85px] rounded-full pointer-events-none group-hover:bg-[#0060F0]/20 transition-all duration-700" />
       <canvas
         ref={canvasRef}
         style={{ width: "100%", height: "100%" }}
-        className="relative z-10 block"
+        className="relative z-10 block cursor-grab active:cursor-grabbing"
       />
     </div>
   );

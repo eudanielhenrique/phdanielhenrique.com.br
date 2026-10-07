@@ -14,11 +14,14 @@ export function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0B0D12]/80 backdrop-blur-md py-6 border-b border-[#22262F]/60 transition-all">
+    <header className="card-hairline fixed top-0 left-0 right-0 z-50 bg-[#0B0D12]/85 backdrop-blur-md py-4 sm:py-5 border-b border-[#22262F]/80 transition-all">
       <div className="max-w-6xl mx-auto px-6 sm:px-10 flex items-center justify-between">
         {/* Custom Daniel Henrique 'DH' Monogram */}
-        <a href="#" aria-label="Daniel Henrique - Início">
+        <a href="#" aria-label="Daniel Henrique - Início" className="tactile-btn flex items-center gap-3">
           <Logo />
+          <span className="hidden sm:inline-block font-display text-xs font-semibold tracking-wider text-[#F5F5F7]/80 uppercase">
+            Daniel Henrique
+          </span>
         </a>
 
         {/* Desktop Links */}
@@ -27,11 +30,20 @@ export function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="text-xs text-[#8A8F99] hover:text-[#0060F0] transition-colors"
+              className="text-xs text-[#8A8F99] hover:text-[#F5F5F7] transition-colors relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-[#0060F0] hover:after:w-full after:transition-all after:duration-300"
             >
               {link.label}
             </a>
           ))}
+
+          <a
+            href="https://wa.me/5527999088661?text=Ol%C3%A1%20Daniel,%20vim%20pelo%20seu%20site"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="tactile-btn px-4 py-1.5 rounded-full text-xs font-medium bg-[#0060F0] hover:bg-[#0050D0] text-white shadow-md shadow-[#0060F0]/20"
+          >
+            WhatsApp ↗
+          </a>
         </nav>
 
         {/* Mobile menu button */}

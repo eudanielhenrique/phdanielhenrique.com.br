@@ -50,24 +50,24 @@ export function Ventures() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {ventures.map((v) => (
             <a
               key={v.name}
               href={v.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group p-6 rounded-2xl bg-[#12151B] border border-[#22262F] hover:border-[#0060F0]/50 transition-all duration-200 flex flex-col justify-between hover:-translate-y-1"
+              className="card-hairline card-hover group p-6 rounded-2xl bg-[#12151B] border border-[#22262F] flex flex-col justify-between"
             >
               <div>
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-[11px] font-mono text-[#0060F0]">
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-[11px] font-mono text-[#0060F0] px-2 py-0.5 rounded-full bg-[#0060F0]/10 border border-[#0060F0]/20">
                     {v.role}
                   </span>
                   <ArrowTopRightIcon className="w-3.5 h-3.5 text-[#565B66] group-hover:text-[#0060F0] transition-colors" />
                 </div>
 
-                <h3 className="font-display text-lg font-bold text-[#F5F5F7] group-hover:text-[#0060F0] transition-colors mb-2">
+                <h3 className="font-display text-xl font-bold text-[#F5F5F7] group-hover:text-[#0060F0] transition-colors mb-2.5 tracking-tight">
                   {v.name}
                 </h3>
 
@@ -76,9 +76,12 @@ export function Ventures() {
                 </p>
               </div>
 
-              <div className="pt-5 mt-4 border-t border-[#22262F]/60">
+              <div className="pt-5 mt-5 border-t border-[#22262F]/80 flex items-center justify-between">
                 <span className="text-[11px] font-mono text-[#565B66] group-hover:text-[#F5F5F7] transition-colors">
                   {v.domain}
+                </span>
+                <span className="text-[10px] text-[#565B66] group-hover:text-[#0060F0] font-mono transition-colors">
+                  visitar ↗
                 </span>
               </div>
             </a>

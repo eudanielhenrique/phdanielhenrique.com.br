@@ -7,18 +7,18 @@ export function Hero() {
   const { personal } = portfolioData;
 
   return (
-    <section className="relative min-h-[90vh] pt-36 pb-20 flex items-center overflow-hidden">
+    <section className="relative min-h-[100dvh] pt-28 pb-16 lg:py-0 flex items-center overflow-hidden">
       {/* Background Dot Pattern & Atmospheric Scrim */}
-      <div className="absolute inset-0 dots-grid pointer-events-none opacity-25" />
-      <div className="absolute top-1/4 left-1/4 w-[480px] h-[480px] bg-[#0060F0]/[0.07] rounded-full blur-[120px] pointer-events-none -z-10" />
+      <div className="absolute inset-0 dots-grid pointer-events-none opacity-20" />
+      <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-[#0060F0]/[0.08] rounded-full blur-[130px] pointer-events-none -z-10" />
 
       <div className="max-w-6xl mx-auto px-6 sm:px-10 w-full relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          {/* Left Column: Natural Human Copy */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+          {/* Left Column: Asymmetric Split Content */}
           <div className="lg:col-span-7 space-y-6 text-left">
-            <div className="animate-fade-up inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#12151B] border border-[#22262F] text-xs font-mono text-[#0060F0]">
+            <div className="animate-fade-up inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#12151B] border border-[#22262F] text-[11px] font-mono uppercase tracking-[0.14em] text-[#0060F0]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#0060F0] animate-pulse" />
-              desenvolvedor full stack & founder
+              Desenvolvedor Full Stack & Founder
             </div>
 
             <h1 className="animate-fade-up delay-100 font-display text-4xl sm:text-6xl lg:text-[4.2rem] font-bold tracking-[-0.035em] text-[#F5F5F7] leading-[1.06] [text-wrap:balance]">

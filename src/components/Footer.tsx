@@ -2,6 +2,7 @@
 
 import { portfolioData } from "@/data/portfolioData";
 import { GithubIcon, LinkedinIcon, InstagramIcon } from "@/components/Icons";
+import { Logo } from "@/components/Logo";
 
 export function Footer() {
   return (
@@ -9,19 +10,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-6 sm:px-10 flex flex-col sm:flex-row items-center justify-between gap-6">
         {/* Logo and copyright */}
         <div className="flex items-center gap-3">
-          <svg
-            viewBox="0 0 28 28"
-            fill="none"
-            className="w-5 h-5 text-[#0060F0]"
-          >
-            <path
-              d="M4 6V22M4 6L14 14M4 22L14 14M24 6V22M24 6L14 14M24 22L14 14"
-              stroke="currentColor"
-              strokeWidth="2.4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+          <Logo className="w-5 h-5" />
           <span className="text-xs text-[#8A8F99]">
             © 2026 {portfolioData.personal.name}. Todos os direitos reservados.
           </span>

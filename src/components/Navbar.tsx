@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { portfolioData } from "@/data/portfolioData";
+import { Logo } from "@/components/Logo";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,21 +16,9 @@ export function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#0B0D12]/80 backdrop-blur-md py-6 border-b border-[#22262F]/60 transition-all">
       <div className="max-w-6xl mx-auto px-6 sm:px-10 flex items-center justify-between">
-        {/* Monogram Logo (Clean Geometric BA Blue 'DH' signature) */}
-        <a href="#" className="flex items-center gap-2 group" aria-label="Início">
-          <svg
-            viewBox="0 0 28 28"
-            fill="none"
-            className="w-7 h-7 text-[#0060F0] transition-transform duration-300 group-hover:scale-105"
-          >
-            <path
-              d="M4 6V22M4 6L14 14M4 22L14 14M24 6V22M24 6L14 14M24 22L14 14"
-              stroke="currentColor"
-              strokeWidth="2.4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+        {/* Custom Daniel Henrique 'DH' Monogram */}
+        <a href="#" aria-label="Daniel Henrique - Início">
+          <Logo />
         </a>
 
         {/* Desktop Links */}

@@ -127,6 +127,27 @@ export default async function Image() {
           >
             Fundador de 4 startups e desenvolvedor há mais de 8 anos conectando sistemas corporativos e ecossistema WhatsApp.
           </p>
+
+          {/* Explicit Conversion CTA Button */}
+          <div style={{ display: "flex", alignItems: "center", gap: "16px", paddingTop: "10px" }}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+                padding: "12px 28px",
+                borderRadius: "999px",
+                backgroundColor: "#0060F0",
+                color: "#FFFFFF",
+                fontSize: "16px",
+                fontWeight: 700,
+                boxShadow: "0 8px 25px rgba(0, 96, 240, 0.45)",
+              }}
+            >
+              <span>Acessar portfólio</span>
+              <span style={{ fontSize: "18px" }}>→</span>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Bar: Ventures Tags */}

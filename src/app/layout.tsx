@@ -12,11 +12,11 @@ const sora = Sora({
 export const metadata: Metadata = {
   metadataBase: new URL("https://phdanielhenrique.com.br"),
   title: {
-    default: "Daniel Henrique | Automação com n8n & IA | Full Stack Developer",
+    default: "Daniel Henrique | Dev Full Stack & Automação n8n",
     template: "%s | Daniel Henrique",
   },
   description:
-    "Desenvolvedor Full Stack há mais de 8 anos e founder (Figprod, Bora Automatizar, BuskaLeads, LetsGoPedir). Especialista em esteiras no n8n, agentes de IA, integração de ERPs e ecossistema WhatsApp em Barra de São Francisco - ES.",
+    "Dev Full Stack há mais de 8 anos e founder (Figprod, Bora Automatizar). Crio sistemas, esteiras no n8n, agentes de IA e integrações de ERPs e WhatsApp.",
   keywords: [
     "Daniel Henrique",
     "phdanielhenrique",
@@ -47,16 +47,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: "https://phdanielhenrique.com.br",
-    title: "Daniel Henrique | Automação com n8n & IA | Full Stack Developer",
+    title: "Daniel Henrique | Dev Full Stack & Automação n8n",
     description:
-      "Eu construo sistemas e automatizo processos que geram resultado. Desenvolvedor há mais de 8 anos e fundador de 4 startups.",
+      "Dev Full Stack há mais de 8 anos e founder (Figprod, Bora Automatizar). Crio sistemas, esteiras no n8n, agentes de IA e integrações de ERPs e WhatsApp.",
     siteName: "Daniel Henrique",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Daniel Henrique | Automação com n8n & IA",
+    title: "Daniel Henrique | Dev Full Stack & Automação n8n",
     description:
-      "Eu construo sistemas e automatizo processos que geram resultado. Fundador de 4 startups.",
+      "Dev Full Stack há mais de 8 anos e founder (Figprod, Bora Automatizar). Crio sistemas, esteiras no n8n, agentes de IA e integrações de ERPs e WhatsApp.",
     creator: "@phdanielhenrque",
   },
   robots: {

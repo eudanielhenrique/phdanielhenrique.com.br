@@ -34,6 +34,14 @@ export interface SkillCategory {
   skills: { name: string; highlight?: boolean }[];
 }
 
+export interface VentureItem {
+  name: string;
+  tag: string;
+  url: string;
+  role: string;
+  description: string;
+}
+
 export const portfolioData = {
   personal: {
     name: "Daniel Henrique",
@@ -52,6 +60,37 @@ export const portfolioData = {
     instagram: "https://instagram.com/phdanielhenrique",
     twitter: "https://x.com/phdanielhenrque",
   },
+
+  ventures: [
+    {
+      name: "Figprod",
+      tag: "@fig.prod",
+      url: "https://figprod.com.br",
+      role: "Founder",
+      description: "Consultoria e engenharia de software",
+    },
+    {
+      name: "Bora Automatizar",
+      tag: "@boraautomatizar.com.br",
+      url: "https://boraautomatizar.com.br",
+      role: "Founder",
+      description: "Automação com n8n e esteiras de dados",
+    },
+    {
+      name: "BuskaLeads",
+      tag: "@buskaleads.com.br",
+      url: "https://buskaleads.com.br",
+      role: "Founder",
+      description: "Prospecção inteligente de leads B2B",
+    },
+    {
+      name: "LetsGoPedir",
+      tag: "@letsgopedir",
+      url: "https://letsgopedir.com.br",
+      role: "Founder",
+      description: "Cardápio digital e gestão de pedidos",
+    },
+  ] as VentureItem[],
 
   stats: [
     { value: "+40", label: "Projetos e repositórios desenvolvidos" },

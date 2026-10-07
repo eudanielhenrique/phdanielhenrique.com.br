@@ -5,7 +5,7 @@ import { portfolioData } from "@/data/portfolioData";
 import { CheckCircle2, MapPin, Building2, Code2 } from "lucide-react";
 
 export function About() {
-  const { personal } = portfolioData;
+  const { personal, ventures } = portfolioData;
 
   const coreSkills = [
     "n8n Workflows",
@@ -34,9 +34,10 @@ export function About() {
             </div>
 
             <p className="text-sm sm:text-base text-[#8A8F99] font-normal leading-relaxed">
-              Atuo na interseção entre o desenvolvimento de aplicações completas e a automação de processos
-              corporativos. Desenvolvo a ponte entre sistemas legados (ERPs, bancos relacionais, plataformas de vendas)
-              e tecnologias de ponta como agentes de IA, n8n e arquiteturas de alta vazão no WhatsApp.
+              Atuo na interseção entre engenharia de software, automação corporativa e produtos digitais escaláveis.
+              Como fundador da <strong className="text-[#F5F5F7]">Figprod</strong>, <strong className="text-[#F5F5F7]">Bora Automatizar</strong>, <strong className="text-[#F5F5F7]">BuskaLeads</strong> e <strong className="text-[#F5F5F7]">LetsGoPedir</strong>,
+              construo a ponte entre sistemas legados (ERPs, bancos relacionais) e tecnologias de ponta como agentes de IA,
+              fluxos autônomos no n8n e infraestruturas de alta performance no WhatsApp.
             </p>
 
             {/* Daniel's Real Metrics */}
@@ -109,18 +110,41 @@ export function About() {
                 </div>
               </div>
 
-              <div className="py-5 space-y-3 text-xs text-[#8A8F99] border-b border-[#22262F]">
-                <div className="flex items-center gap-2">
-                  <Building2 className="w-4 h-4 text-[#8A8F99] shrink-0" />
-                  <span>Fundador da <strong className="text-[#F5F5F7]">Figprod</strong> (figprod.com.br)</span>
+              <div className="py-5 space-y-4 text-xs text-[#8A8F99] border-b border-[#22262F]">
+                <div>
+                  <div className="flex items-center gap-1.5 text-[11px] font-mono text-[#565B66] mb-2 uppercase tracking-wider">
+                    <Building2 className="w-3.5 h-3.5 text-[#0060F0]" />
+                    <span>Founder</span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2">
+                    {ventures.map((v) => (
+                      <a
+                        key={v.name}
+                        href={v.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2.5 rounded-xl bg-[#181C24] border border-[#22262F] hover:border-[#0060F0]/50 transition-all group"
+                      >
+                        <div className="font-semibold text-[#F5F5F7] group-hover:text-[#0060F0] text-xs transition-colors">
+                          {v.name}
+                        </div>
+                        <div className="text-[10px] font-mono text-[#565B66] truncate mt-0.5">
+                          {v.tag}
+                        </div>
+                      </a>
+                    ))}
+                  </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-[#8A8F99] shrink-0" />
-                  <span>{personal.location}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Code2 className="w-4 h-4 text-[#8A8F99] shrink-0" />
-                  <span>Full Stack Developer & AI Specialist</span>
+
+                <div className="space-y-2 pt-1 border-t border-[#22262F]/60">
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-3.5 h-3.5 text-[#565B66] shrink-0" />
+                    <span>{personal.location}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Code2 className="w-3.5 h-3.5 text-[#565B66] shrink-0" />
+                    <span>Full Stack & AI Specialist</span>
+                  </div>
                 </div>
               </div>
 

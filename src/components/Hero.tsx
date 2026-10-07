@@ -5,7 +5,7 @@ import { FlowMesh } from "@/components/FlowMesh";
 import { ArrowRight, MessageSquare } from "lucide-react";
 
 export function Hero() {
-  const { personal } = portfolioData;
+  const { personal, ventures } = portfolioData;
 
   return (
     <section className="relative min-h-[92vh] pt-36 pb-20 flex items-center overflow-hidden">
@@ -29,16 +29,59 @@ export function Hero() {
             <p className="text-sm sm:text-base text-[#8A8F99] font-normal leading-relaxed max-w-xl">
               Sou <span className="text-[#F5F5F7] font-medium">{personal.name}</span>, desenvolvedor Full Stack e fundador da{" "}
               <a
-                href={personal.companyUrl}
+                href="https://figprod.com.br"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#0060F0] underline underline-offset-4 decoration-[#0060F0]/30 hover:decoration-[#0060F0]"
+                className="text-[#F5F5F7] hover:text-[#0060F0] font-medium underline underline-offset-4 decoration-[#0060F0]/40 transition-colors"
               >
                 Figprod
+              </a>
+              ,{" "}
+              <a
+                href="https://boraautomatizar.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#F5F5F7] hover:text-[#0060F0] font-medium underline underline-offset-4 decoration-[#0060F0]/40 transition-colors"
+              >
+                Bora Automatizar
+              </a>
+              ,{" "}
+              <a
+                href="https://buskaleads.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#F5F5F7] hover:text-[#0060F0] font-medium underline underline-offset-4 decoration-[#0060F0]/40 transition-colors"
+              >
+                BuskaLeads
+              </a>{" "}
+              e{" "}
+              <a
+                href="https://letsgopedir.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#F5F5F7] hover:text-[#0060F0] font-medium underline underline-offset-4 decoration-[#0060F0]/40 transition-colors"
+              >
+                LetsGoPedir
               </a>
               . Desenvolvo esteiras de dados, integro ERPs corporativos e crio ferramentas
               no ecossistema de WhatsApp para empresas que buscam eficiência operacional sem complexidade.
             </p>
+
+            {/* Founder quick chips */}
+            <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
+              <span className="text-[#565B66] font-mono text-xs">Founder:</span>
+              {ventures.map((v) => (
+                <a
+                  key={v.name}
+                  href={v.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-[#12151B] border border-[#22262F] hover:border-[#0060F0]/50 text-[#8A8F99] hover:text-[#0060F0] font-mono text-[11px] transition-all"
+                >
+                  <span>{v.tag}</span>
+                </a>
+              ))}
+            </div>
 
             <div className="pt-2 flex flex-wrap items-center gap-3.5">
               <a

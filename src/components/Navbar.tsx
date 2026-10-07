@@ -9,7 +9,6 @@ export function Navbar() {
 
   const links = [
     { label: "Sobre", href: "#sobre" },
-    { label: "Projetos", href: "#projetos" },
     { label: "Redes Sociais", href: "#redes" },
     { label: "Contato", href: "#contato" },
   ];

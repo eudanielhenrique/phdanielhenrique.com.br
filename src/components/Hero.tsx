@@ -42,10 +42,10 @@ export function Hero() {
 
             <div className="pt-2 flex flex-wrap items-center gap-3.5">
               <a
-                href="#projetos"
+                href="#sobre"
                 className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#00f576] hover:bg-[#00df6c] text-black font-semibold text-xs sm:text-sm transition-all hover:scale-[1.02] active:scale-95 shadow-md shadow-[#00f576]/15"
               >
-                <span>Ver projetos reais</span>
+                <span>Conhecer mais</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
 

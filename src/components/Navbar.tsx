@@ -19,9 +19,15 @@ export function Navbar() {
         {/* Custom Daniel Henrique 'DH' Monogram */}
         <a href="#" aria-label="Daniel Henrique - Início" className="tactile-btn flex items-center gap-3">
           <Logo />
-          <span className="hidden sm:inline-block font-display text-xs font-semibold tracking-wider text-[#F5F5F7]/80 uppercase">
-            Daniel Henrique
-          </span>
+          <div className="flex flex-col text-left">
+            <span className="font-display text-xs font-semibold tracking-wider text-[#F5F5F7] uppercase">
+              Daniel Henrique
+            </span>
+            <span className="hidden sm:inline-flex items-center gap-1.5 text-[10px] font-mono text-[#8A8F99]">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+              disponível para projetos
+            </span>
+          </div>
         </a>
 
         {/* Desktop Links */}

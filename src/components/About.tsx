@@ -18,14 +18,21 @@ export function About() {
   ];
 
   return (
-    <section id="sobre" className="py-24 relative z-10 border-t border-white/[0.05]">
+    <section id="sobre" className="py-24 sm:py-28 relative z-10 border-t border-white/[0.05]">
+      <div className="section-divider absolute top-0 inset-x-0" />
+
       <div className="max-w-6xl mx-auto px-6 sm:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Column: Human Story, Stats & Stack */}
           <div className="lg:col-span-7 space-y-7 text-left">
-            <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-[#F5F5F7]">
-              Sobre
-            </h2>
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#12151B] border border-[#22262F] text-xs font-mono text-[#0060F0] mb-3">
+                trajetória & foco
+              </div>
+              <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-[#F5F5F7]">
+                Sobre
+              </h2>
+            </div>
 
             <div className="space-y-4 text-sm sm:text-base text-[#8A8F99] leading-relaxed">
               <p>
@@ -42,21 +49,21 @@ export function About() {
 
             {/* Metrics with VibeCurb architectural stats */}
             <div className="grid grid-cols-3 gap-4 pt-2 pb-4">
-              <div className="card-hairline p-4 rounded-xl bg-[#12151B] border border-[#22262F]">
+              <div className="card-hairline card-hover p-4 sm:p-5 rounded-xl bg-[#12151B] border border-[#22262F]">
                 <div className="font-display text-2xl sm:text-3xl font-bold text-[#0060F0] tracking-tight">
                   Desde 2013
                 </div>
                 <div className="text-xs text-[#8A8F99] mt-1">No código</div>
               </div>
 
-              <div className="card-hairline p-4 rounded-xl bg-[#12151B] border border-[#22262F]">
+              <div className="card-hairline card-hover p-4 sm:p-5 rounded-xl bg-[#12151B] border border-[#22262F]">
                 <div className="font-display text-2xl sm:text-3xl font-bold text-[#0060F0] tracking-tight">
                   +40 Projetos
                 </div>
                 <div className="text-xs text-[#8A8F99] mt-1">Sistemas entregues</div>
               </div>
 
-              <div className="card-hairline p-4 rounded-xl bg-[#12151B] border border-[#22262F]">
+              <div className="card-hairline card-hover p-4 sm:p-5 rounded-xl bg-[#12151B] border border-[#22262F]">
                 <div className="font-display text-2xl sm:text-3xl font-bold text-[#0060F0] tracking-tight">
                   4 Startups
                 </div>

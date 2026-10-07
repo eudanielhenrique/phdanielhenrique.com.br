@@ -16,16 +16,16 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column: Natural Human Copy */}
           <div className="lg:col-span-7 space-y-6 text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#12151B] border border-[#22262F] text-xs font-mono text-[#0060F0]">
+            <div className="animate-fade-up inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#12151B] border border-[#22262F] text-xs font-mono text-[#0060F0]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#0060F0] animate-pulse" />
               desenvolvedor full stack & founder
             </div>
 
-            <h1 className="font-display text-4xl sm:text-6xl lg:text-[4.2rem] font-bold tracking-[-0.035em] text-[#F5F5F7] leading-[1.06]">
+            <h1 className="animate-fade-up delay-100 font-display text-4xl sm:text-6xl lg:text-[4.2rem] font-bold tracking-[-0.035em] text-[#F5F5F7] leading-[1.06] [text-wrap:balance]">
               Eu construo sistemas e automatizo processos que geram resultado.
             </h1>
 
-            <p className="text-sm sm:text-base text-[#8A8F99] leading-relaxed max-w-xl font-normal">
+            <p className="animate-fade-up delay-200 text-sm sm:text-base text-[#8A8F99] leading-relaxed max-w-[62ch] font-normal">
               Desenvolvo pra web desde 2013 e sou founder na{" "}
               <a
                 href="https://figprod.com.br"
@@ -66,7 +66,7 @@ export function Hero() {
               no ecossistema do WhatsApp sem enrolação.
             </p>
 
-            <div className="pt-2 flex flex-wrap items-center gap-3.5">
+            <div className="animate-fade-up delay-300 pt-2 flex flex-wrap items-center gap-3.5">
               <a
                 href={personal.whatsapp}
                 target="_blank"
@@ -86,7 +86,7 @@ export function Hero() {
           </div>
 
           {/* Right Column: Clean Geometric Wireframe Canvas */}
-          <div className="lg:col-span-5 flex items-center justify-center lg:justify-end">
+          <div className="animate-fade-up delay-200 lg:col-span-5 flex items-center justify-center lg:justify-end">
             <WireframeSphere />
           </div>
         </div>

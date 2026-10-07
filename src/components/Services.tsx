@@ -22,8 +22,8 @@ export function Services() {
   };
 
   return (
-    <section id="servicos" className="py-28 relative z-10 border-t border-white/[0.08] bg-[#010702]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section id="servicos" className="py-32 relative z-10 bg-[#010702]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 backdrop-blur-2xl text-xs sm:text-sm text-[#F5F9F0] shadow-sm mb-4">

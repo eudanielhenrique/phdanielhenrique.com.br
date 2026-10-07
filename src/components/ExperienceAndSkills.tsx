@@ -8,8 +8,8 @@ export function ExperienceAndSkills() {
   const { experiences, skillCategories } = portfolioData;
 
   return (
-    <section id="skills" className="py-28 relative z-10 border-t border-white/[0.08] bg-[#010702]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section id="skills" className="py-32 relative z-10 bg-[#010702]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           {/* Left Column: Timeline */}
           <div className="lg:col-span-6 space-y-8">

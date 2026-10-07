@@ -1,17 +1,12 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Plus_Jakarta_Sans } from "next/font/google";
+import { Sora } from "next/font/google";
 import "./globals.css";
 
-const bricolage = Bricolage_Grotesque({
-  variable: "--font-display",
+const sora = Sora({
+  variable: "--font-sora",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-const jakarta = Plus_Jakarta_Sans({
-  variable: "--font-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -65,9 +60,9 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${bricolage.variable} ${jakarta.variable} scroll-smooth`}
+      className={`${sora.variable} scroll-smooth`}
     >
-      <body className="min-h-screen bg-[#010702] text-[#F5F9F0] antialiased selection:bg-[#A8FF35]/30 selection:text-white font-sans">
+      <body className="min-h-screen bg-[#0B0D12] text-[#F5F5F7] antialiased selection:bg-[#0060F0]/25 selection:text-[#F5F5F7]">
         {children}
       </body>
     </html>

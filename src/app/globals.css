@@ -1,15 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: var(--font-display), system-ui, sans-serif;
-  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-sora: var(--font-sora), system-ui, sans-serif;
+  --font-display: var(--font-sora), system-ui, sans-serif;
+  --font-sans: var(--font-sora), system-ui, sans-serif;
 }
 
 :root {
-  --bg: #070808;
-  --text-hi: #FFFFFF;
-  --text-mid: #9E9E9E;
-  --accent-green: #00f576;
+  --bg: #0B0D12;
+  --surface: #12151B;
+  --surface2: #181C24;
+  --border: #22262F;
+  --border-hover: #2E333D;
+  --text: #F5F5F7;
+  --text-muted: #8A8F99;
+  --text-dim: #565B66;
+  --accent: #0060F0;
+  --accent-hover: #0050D0;
+  --accent-subtle: rgba(0, 96, 240, 0.12);
 }
 
 html {
@@ -20,8 +28,8 @@ html {
 
 body {
   background-color: var(--bg);
-  color: var(--text-hi);
-  font-family: var(--font-sans);
+  color: var(--text);
+  font-family: var(--font-sora), sans-serif;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -30,28 +38,29 @@ body {
   font-family: var(--font-display);
 }
 
-/* Subtle dot grid pattern matching reference */
+/* Subtle dot grid pattern */
 .dots-grid {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(245, 245, 247, 0.05) 1px, transparent 1px);
   background-size: 28px 28px;
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #070808;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e2220;
+  background: #22262F;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2e3531;
+  background: #2E333D;
 }
 
 ::selection {
-  background: rgba(0, 245, 118, 0.3);
-  color: #FFFFFF;
+  background: rgba(0, 96, 240, 0.25);
+  color: #F5F5F7;
 }

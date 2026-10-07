@@ -5,8 +5,8 @@ export function SparkIcon({ className = "w-4 h-4" }: { className?: string }) {
     <svg viewBox="0 0 16 16" aria-hidden="true" className={className}>
       <defs>
         <linearGradient id="spark-grad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#D8FFA6" />
-          <stop offset="1" stopColor="#A8FF35" />
+          <stop offset="0" stopColor="#60A5FA" />
+          <stop offset="1" stopColor="#0060F0" />
         </linearGradient>
       </defs>
       <path

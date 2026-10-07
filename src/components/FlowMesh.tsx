@@ -82,11 +82,11 @@ export function FlowMesh() {
           const maxDist = nodes[i].isHub || nodes[j].isHub ? 165 : 105;
 
           if (dist < maxDist) {
-            const alpha = (1 - dist / maxDist) * 0.35;
+            const alpha = (1 - dist / maxDist) * 0.4;
             ctx.beginPath();
             ctx.moveTo(nodes[i].x, nodes[i].y);
             ctx.lineTo(nodes[j].x, nodes[j].y);
-            ctx.strokeStyle = `rgba(0, 245, 118, ${alpha})`;
+            ctx.strokeStyle = `rgba(0, 96, 240, ${alpha})`;
             ctx.lineWidth = nodes[i].isHub && nodes[j].isHub ? 1.4 : 0.8;
             ctx.stroke();
           }
@@ -100,25 +100,25 @@ export function FlowMesh() {
           const glow = Math.sin(pulse + node.x) * 3 + 8;
           ctx.beginPath();
           ctx.arc(node.x, node.y, glow, 0, Math.PI * 2);
-          ctx.fillStyle = "rgba(0, 245, 118, 0.08)";
+          ctx.fillStyle = "rgba(0, 96, 240, 0.15)";
           ctx.fill();
 
           ctx.beginPath();
           ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
-          ctx.fillStyle = "#00f576";
+          ctx.fillStyle = "#0060F0";
           ctx.fill();
 
           // Label
           if (node.label) {
             ctx.font = "10px monospace";
-            ctx.fillStyle = "rgba(255, 255, 255, 0.75)";
+            ctx.fillStyle = "rgba(245, 245, 247, 0.85)";
             ctx.textAlign = "center";
             ctx.fillText(node.label, node.x, node.y - 9);
           }
         } else {
           ctx.beginPath();
           ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
-          ctx.fillStyle = "rgba(0, 245, 118, 0.4)";
+          ctx.fillStyle = "rgba(0, 96, 240, 0.45)";
           ctx.fill();
         }
       });
@@ -135,7 +135,7 @@ export function FlowMesh() {
 
   return (
     <div className="relative w-full max-w-[440px] aspect-square flex items-center justify-center">
-      <div className="absolute inset-0 bg-[#00f576]/8 blur-[90px] rounded-full pointer-events-none" />
+      <div className="absolute inset-0 bg-[#0060F0]/12 blur-[90px] rounded-full pointer-events-none" />
       <canvas
         ref={canvasRef}
         width={480}

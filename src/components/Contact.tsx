@@ -10,15 +10,15 @@ export function Contact() {
   return (
     <section id="contato" className="py-28 relative z-10 text-center">
       <div className="max-w-4xl mx-auto px-6">
-        <span className="text-xs font-mono text-[#00f576] uppercase tracking-wider block mb-3">
+        <span className="text-xs font-mono text-[#0060F0] uppercase tracking-wider block mb-3">
           Próximo Passo
         </span>
 
-        <h2 className="font-display text-3xl sm:text-5xl font-bold tracking-tight text-white mb-4">
+        <h2 className="font-display text-3xl sm:text-5xl font-bold tracking-tight text-[#F5F5F7] mb-4">
           Tem um processo manual que você quer automatizar?
         </h2>
 
-        <p className="text-sm sm:text-base text-[#9E9E9E] max-w-lg mx-auto mb-10 leading-relaxed">
+        <p className="text-sm sm:text-base text-[#8A8F99] max-w-lg mx-auto mb-10 leading-relaxed">
           Seja para integrar seu ERP, estruturar fluxos no n8n ou construir uma solução web moderna,
           estou disponível para novos projetos e consultoria técnica.
         </p>
@@ -29,7 +29,7 @@ export function Contact() {
             href={personal.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-[#00f576] hover:bg-[#00df6c] text-black font-semibold text-xs sm:text-sm transition-all hover:scale-[1.02] active:scale-95 shadow-md shadow-[#00f576]/15"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-[#0060F0] hover:bg-[#0050D0] text-white font-semibold text-xs sm:text-sm transition-all hover:scale-[1.02] active:scale-95 shadow-lg shadow-[#0060F0]/25"
           >
             <MessageSquare className="w-4 h-4" />
             <span>Chamar no WhatsApp</span>
@@ -39,18 +39,18 @@ export function Contact() {
             href={personal.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-white/[0.04] hover:bg-white/[0.08] border border-white/20 hover:border-white/40 text-white font-medium text-xs sm:text-sm transition-all"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-[#12151B] hover:bg-[#181C24] border border-[#22262F] hover:border-[#0060F0]/40 text-[#F5F5F7] font-medium text-xs sm:text-sm transition-all"
           >
-            <GithubIcon className="w-4 h-4 text-[#00f576]" />
+            <GithubIcon className="w-4 h-4 text-[#0060F0]" />
             <span>GitHub (@eudanielhenrique)</span>
           </a>
         </div>
 
         {/* Quick direct communication icons */}
-        <div className="mt-10 flex items-center justify-center gap-3 text-[#9E9E9E]">
+        <div className="mt-10 flex items-center justify-center gap-3 text-[#8A8F99]">
           <a
             href={`mailto:${personal.email}`}
-            className="p-2.5 rounded-full hover:text-[#00f576] hover:bg-white/5 transition-colors border border-white/5"
+            className="p-2.5 rounded-full hover:text-[#0060F0] hover:bg-[#12151B] transition-colors border border-[#22262F]"
             title="E-mail direto"
           >
             <Mail className="w-4 h-4" />
@@ -59,7 +59,7 @@ export function Contact() {
             href={personal.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2.5 rounded-full hover:text-[#00f576] hover:bg-white/5 transition-colors border border-white/5"
+            className="p-2.5 rounded-full hover:text-[#0060F0] hover:bg-[#12151B] transition-colors border border-[#22262F]"
             title="GitHub"
           >
             <GithubIcon className="w-4 h-4" />
@@ -68,7 +68,7 @@ export function Contact() {
             href={personal.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2.5 rounded-full hover:text-[#00f576] hover:bg-white/5 transition-colors border border-white/5"
+            className="p-2.5 rounded-full hover:text-[#0060F0] hover:bg-[#12151B] transition-colors border border-[#22262F]"
             title="LinkedIn"
           >
             <LinkedinIcon className="w-4 h-4" />
@@ -77,7 +77,7 @@ export function Contact() {
             href={personal.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2.5 rounded-full hover:text-[#00f576] hover:bg-white/5 transition-colors border border-white/5"
+            className="p-2.5 rounded-full hover:text-[#0060F0] hover:bg-[#12151B] transition-colors border border-[#22262F]"
             title="Instagram"
           >
             <InstagramIcon className="w-4 h-4" />

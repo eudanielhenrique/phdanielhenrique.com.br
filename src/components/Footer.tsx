@@ -5,14 +5,14 @@ import { GithubIcon, LinkedinIcon, InstagramIcon } from "@/components/Icons";
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/[0.06] py-10 bg-[#070808]">
+    <footer className="border-t border-[#22262F] py-10 bg-[#0B0D12]">
       <div className="max-w-6xl mx-auto px-6 sm:px-10 flex flex-col sm:flex-row items-center justify-between gap-6">
         {/* Logo and copyright */}
         <div className="flex items-center gap-3">
           <svg
             viewBox="0 0 28 28"
             fill="none"
-            className="w-5 h-5 text-[#00f576]"
+            className="w-5 h-5 text-[#0060F0]"
           >
             <path
               d="M4 6V22M4 6L14 14M4 22L14 14M24 6V22M24 6L14 14M24 22L14 14"
@@ -22,18 +22,18 @@ export function Footer() {
               strokeLinejoin="round"
             />
           </svg>
-          <span className="text-xs text-[#9E9E9E]">
+          <span className="text-xs text-[#8A8F99]">
             © 2026 {portfolioData.personal.name}. Todos os direitos reservados.
           </span>
         </div>
 
         {/* Social Icons right-aligned */}
-        <div className="flex items-center gap-4 text-[#9E9E9E]">
+        <div className="flex items-center gap-4 text-[#8A8F99]">
           <a
             href={portfolioData.personal.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
+            className="hover:text-[#0060F0] transition-colors"
             title="LinkedIn"
           >
             <LinkedinIcon className="w-4 h-4" />
@@ -42,7 +42,7 @@ export function Footer() {
             href={portfolioData.personal.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
+            className="hover:text-[#0060F0] transition-colors"
             title="GitHub"
           >
             <GithubIcon className="w-4 h-4" />
@@ -51,7 +51,7 @@ export function Footer() {
             href={portfolioData.personal.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
+            className="hover:text-[#0060F0] transition-colors"
             title="Instagram"
           >
             <InstagramIcon className="w-4 h-4" />

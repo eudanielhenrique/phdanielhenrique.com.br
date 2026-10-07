@@ -26,7 +26,7 @@ export function Hero() {
             </h1>
 
             <p className="text-sm sm:text-base text-[#8A8F99] leading-relaxed max-w-xl font-normal">
-              Sou desenvolvedor há mais de 8 anos e founder na{" "}
+              Desenvolvo pra web desde 2013 e sou founder na{" "}
               <a
                 href="https://figprod.com.br"
                 target="_blank"

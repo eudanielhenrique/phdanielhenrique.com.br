@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Daniel Henrique",
   },
   description:
-    "Dev Full Stack há mais de 8 anos e founder (Figprod, Bora Automatizar). Crio sistemas, esteiras no n8n, agentes de IA e integrações de ERPs e WhatsApp.",
+    "Dev Full Stack desde 2013 e founder (Figprod, Bora Automatizar). Crio sistemas, esteiras no n8n, agentes de IA e integrações de ERPs e WhatsApp.",
   keywords: [
     "Daniel Henrique",
     "phdanielhenrique",
@@ -49,14 +49,14 @@ export const metadata: Metadata = {
     url: "https://phdanielhenrique.com.br",
     title: "Daniel Henrique | Dev Full Stack & Automação n8n",
     description:
-      "Dev Full Stack há mais de 8 anos e founder (Figprod, Bora Automatizar). Crio sistemas, esteiras no n8n, agentes de IA e integrações de ERPs e WhatsApp.",
+      "Dev Full Stack desde 2013 e founder (Figprod, Bora Automatizar). Crio sistemas, esteiras no n8n, agentes de IA e integrações de ERPs e WhatsApp.",
     siteName: "Daniel Henrique",
   },
   twitter: {
     card: "summary_large_image",
     title: "Daniel Henrique | Dev Full Stack & Automação n8n",
     description:
-      "Dev Full Stack há mais de 8 anos e founder (Figprod, Bora Automatizar). Crio sistemas, esteiras no n8n, agentes de IA e integrações de ERPs e WhatsApp.",
+      "Dev Full Stack desde 2013 e founder (Figprod, Bora Automatizar). Crio sistemas, esteiras no n8n, agentes de IA e integrações de ERPs e WhatsApp.",
     creator: "@phdanielhenrque",
   },
   robots: {
@@ -135,7 +135,7 @@ const jsonLd = {
         "Desenvolvimento Full Stack",
       ],
       description:
-        "Desenvolvedor há mais de 8 anos e founder na Figprod, Bora Automatizar, BuskaLeads e LetsGoPedir. Desenvolvo esteiras de dados no n8n, integro ERPs corporativos e crio ferramentas no ecossistema do WhatsApp.",
+        "Desenvolvedor desde 2013 e founder na Figprod, Bora Automatizar, BuskaLeads e LetsGoPedir. Desenvolvo esteiras de dados no n8n, integro ERPs corporativos e crio ferramentas no ecossistema do WhatsApp.",
     },
     {
       "@type": "WebSite",

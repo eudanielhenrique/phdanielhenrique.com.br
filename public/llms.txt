@@ -5,7 +5,7 @@
 - **Nome Completo**: Daniel Henrique
 - **Localização**: Barra de São Francisco, Espírito Santo, Brasil
 - **Atuação**: Desenvolvedor Full Stack & Founder
-- **Experiência**: Desde 2016 (mais de 8 anos desenvolvendo software em produção)
+- **Experiência**: Desde 2013 (início no desenvolvimento web com HTML/CSS/JS e temas Blogspot; mais de 13 anos de código e sistemas em produção)
 - **Projetos Entregues**: Mais de 40 sistemas e esteiras de automação entregues
 - **Website Oficial**: https://phdanielhenrique.com.br
 

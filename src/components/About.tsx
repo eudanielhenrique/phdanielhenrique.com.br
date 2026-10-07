@@ -30,7 +30,8 @@ export function About() {
             <div className="space-y-4 text-sm sm:text-base text-[#8A8F99] leading-relaxed">
               <p>
                 Eu sou o Daniel Henrique, desenvolvedor Full Stack e fundador baseado em Barra de São Francisco - ES.
-                Construo produtos digitais e esteiras de automação pra empresas, do primeiro commit ao deploy em produção.
+                Minha história com código começou em 2013, editando temas no Blogspot com HTML, CSS e JavaScript na raça.
+                De lá pra cá, transformei essa curiosidade em mais de uma década construindo sistemas reais e negócios digitais.
               </p>
               <p>
                 Atuo resolvendo problemas reais de operação: integro sistemas corporativos e ERPs legados,
@@ -43,9 +44,9 @@ export function About() {
             <div className="grid grid-cols-3 gap-4 pt-2 pb-4">
               <div className="card-hairline p-4 rounded-xl bg-[#12151B] border border-[#22262F]">
                 <div className="font-display text-2xl sm:text-3xl font-bold text-[#0060F0] tracking-tight">
-                  Desde 2016
+                  Desde 2013
                 </div>
-                <div className="text-xs text-[#8A8F99] mt-1">Programando</div>
+                <div className="text-xs text-[#8A8F99] mt-1">No código</div>
               </div>
 
               <div className="card-hairline p-4 rounded-xl bg-[#12151B] border border-[#22262F]">

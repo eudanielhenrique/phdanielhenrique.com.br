@@ -125,7 +125,7 @@ export default async function Image() {
               margin: 0,
             }}
           >
-            Fundador de 4 startups e desenvolvedor há mais de 8 anos conectando sistemas corporativos e ecossistema WhatsApp.
+            Fundador de 4 startups e desenvolvedor na web desde 2013 conectando sistemas corporativos e ecossistema WhatsApp.
           </p>
 
           {/* Explicit Conversion CTA Button */}
@@ -190,7 +190,7 @@ export default async function Image() {
           >
             <span>+40 Projetos</span>
             <span>•</span>
-            <span>Desde 2016</span>
+            <span>Desde 2013</span>
             <span>•</span>
             <span>Barra de São Francisco - ES</span>
           </div>

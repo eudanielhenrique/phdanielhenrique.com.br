@@ -8,8 +8,8 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const links = [
-    { label: "Ecossistema", href: "#ecossistema" },
     { label: "Sobre", href: "#sobre" },
+    { label: "Empresas", href: "#empresas" },
     { label: "Contato", href: "#contato" },
   ];
 

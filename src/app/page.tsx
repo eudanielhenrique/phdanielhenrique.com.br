@@ -10,8 +10,8 @@ export default function Home() {
     <main className="min-h-screen bg-[#0B0D12] text-[#F5F5F7] flex flex-col">
       <Navbar />
       <Hero />
-      <Ventures />
       <About />
+      <Ventures />
       <Contact />
       <Footer />
     </main>

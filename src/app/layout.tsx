@@ -13,21 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Daniel Henrique | Engenheiro de Software & Especialista em IA",
+  title: "Daniel Henrique | Automação com n8n & IA | Full Stack Developer",
   description:
-    "Engenheiro de Software especializado no desenvolvimento de agentes autônomos inteligentes, soluções de inteligência artificial aplicada e arquiteturas web escaláveis.",
+    "Automação com n8n & IA, integração de ERPs, ecossistema WhatsApp (Zapo, WAHA) e desenvolvimento Full Stack moderno (React, Next.js, Node.js). Barra de São Francisco - ES.",
   keywords: [
     "Daniel Henrique",
-    "Engenheiro de Software",
-    "Especialista em IA",
-    "Agentes Autônomos",
+    "phdanielhenrique",
+    "eudanielhenrique",
+    "Automação n8n",
     "Inteligência Artificial",
-    "Full Stack",
+    "Integração ERP",
+    "WhatsApp API",
+    "Zapo",
+    "DeskcommCRM",
+    "Full Stack Developer",
     "Next.js",
-    "TypeScript",
-    "Python",
-    "LangChain",
-    "Automação",
+    "Node.js",
+    "Figprod",
   ],
   authors: [{ name: "Daniel Henrique", url: "https://phdanielhenrique.com.br" }],
   creator: "Daniel Henrique",
@@ -35,16 +37,17 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: "https://phdanielhenrique.com.br",
-    title: "Daniel Henrique | Engenheiro de Software & Especialista em IA",
+    title: "Daniel Henrique | Automação com n8n & IA | Full Stack Developer",
     description:
-      "Sistemas de alto desempenho, agentes autônomos inteligentes e arquiteturas web modernas.",
-    siteName: "Daniel Henrique Portfolio",
+      "Integrando ERPs, orquestrando fluxos com IA e eliminando trabalho manual.",
+    siteName: "Daniel Henrique - phdanielhenrique.com.br",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Daniel Henrique | Engenheiro de Software & Especialista em IA",
+    title: "Daniel Henrique | Automação com n8n & IA",
     description:
-      "Sistemas de alto desempenho, agentes autônomos inteligentes e arquiteturas web modernas.",
+      "Integrando ERPs, orquestrando fluxos com IA e eliminando trabalho manual.",
+    creator: "@phdanielhenrque",
   },
   robots: {
     index: true,
@@ -59,7 +62,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}>
-      <body className="min-h-screen bg-[#090a0f] text-slate-100 antialiased selection:bg-indigo-500/30 selection:text-white">
+      <body className="min-h-screen bg-[#010702] text-[#F5F9F0] antialiased selection:bg-[#A8FF35]/30 selection:text-white">
         {children}
       </body>
     </html>

@@ -9,6 +9,9 @@ export function Hero() {
 
   return (
     <section className="relative min-h-[92vh] pt-36 pb-20 flex items-center overflow-hidden">
+      {/* Atmospheric Top Light Beam */}
+      <div className="atmospheric-beam" />
+
       {/* Background Dot Pattern */}
       <div className="absolute inset-0 dots-grid pointer-events-none opacity-40" />
 
@@ -85,21 +88,21 @@ export function Hero() {
 
             <div className="pt-2 flex flex-wrap items-center gap-3.5">
               <a
-                href="#sobre"
-                className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#0060F0] hover:bg-[#0050D0] text-white font-semibold text-xs sm:text-sm transition-all hover:scale-[1.02] active:scale-95 shadow-lg shadow-[#0060F0]/25"
-              >
-                <span>Conhecer mais</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
-
-              <a
                 href={personal.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#12151B] hover:bg-[#181C24] border border-[#22262F] hover:border-[#0060F0]/40 text-[#F5F5F7] font-medium text-xs sm:text-sm transition-all active:scale-95"
+                className="btn-tactile inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-semibold text-xs sm:text-sm transition-all hover:scale-[1.02] active:scale-95"
               >
-                <MessageSquare className="w-3.5 h-3.5 text-[#0060F0]" />
+                <MessageSquare className="w-4 h-4 text-white" />
                 <span>Conversar no WhatsApp</span>
+              </a>
+
+              <a
+                href="#ecossistema"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#12151B] hover:bg-[#181C24] border border-[#22262F] hover:border-[#0060F0]/40 text-[#8A8F99] hover:text-[#F5F5F7] font-medium text-xs sm:text-sm transition-all active:scale-95"
+              >
+                <span>Explorar ecossistema</span>
+                <ArrowRight className="w-3.5 h-3.5 text-[#0060F0]" />
               </a>
             </div>
           </div>

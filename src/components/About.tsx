@@ -41,26 +41,35 @@ export function About() {
             </p>
 
             {/* Daniel's Real Metrics */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-2 border-y border-[#22262F] py-6">
-              <div>
-                <div className="font-display text-2xl sm:text-3xl font-bold text-[#0060F0]">
-                  +8 Anos
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 py-6">
+              <div className="p-4 rounded-xl bg-[#12151B] border border-[#22262F]">
+                <div className="text-[10px] font-mono text-[#565B66] uppercase tracking-wider mb-1.5">
+                  01 // EXPERIÊNCIA
                 </div>
-                <div className="text-xs text-[#8A8F99] mt-1">Experiência com software</div>
+                <div className="font-display text-2xl sm:text-3xl font-bold text-[#F5F5F7] tracking-tight">
+                  +8 <span className="text-[#0060F0] text-lg font-normal">Anos</span>
+                </div>
+                <div className="text-xs text-[#8A8F99] mt-0.5">Engenharia de software</div>
               </div>
 
-              <div>
-                <div className="font-display text-2xl sm:text-3xl font-bold text-[#0060F0]">
-                  +40 Projetos
+              <div className="p-4 rounded-xl bg-[#12151B] border border-[#22262F]">
+                <div className="text-[10px] font-mono text-[#565B66] uppercase tracking-wider mb-1.5">
+                  02 // PROJETOS
                 </div>
-                <div className="text-xs text-[#8A8F99] mt-1">Sistemas & ferramentas</div>
+                <div className="font-display text-2xl sm:text-3xl font-bold text-[#F5F5F7] tracking-tight">
+                  +40 <span className="text-[#0060F0] text-lg font-normal">Sistemas</span>
+                </div>
+                <div className="text-xs text-[#8A8F99] mt-0.5">Ferramentas & automações</div>
               </div>
 
-              <div>
-                <div className="font-display text-2xl sm:text-3xl font-bold text-[#0060F0]">
+              <div className="p-4 rounded-xl bg-[#12151B] border border-[#22262F]">
+                <div className="text-[10px] font-mono text-[#565B66] uppercase tracking-wider mb-1.5">
+                  03 // EFICIÊNCIA
+                </div>
+                <div className="font-display text-2xl sm:text-3xl font-bold text-[#0060F0] tracking-tight">
                   Zero
                 </div>
-                <div className="text-xs text-[#8A8F99] mt-1">Retrabalho operacional</div>
+                <div className="text-xs text-[#8A8F99] mt-0.5">Retrabalho operacional</div>
               </div>
             </div>
 

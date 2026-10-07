@@ -36,20 +36,17 @@ export function Contact() {
   };
 
   return (
-    <section id="contato" className="py-28 relative z-10 border-t border-white/5 bg-[#010702]">
-      {/* Background Aurora */}
-      <div className="aurora-glow w-[550px] h-[550px] bg-[#A8FF35]/12 bottom-0 right-10 pointer-events-none" />
-
+    <section id="contato" className="py-28 relative z-10 border-t border-white/[0.08] bg-[#010702]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="max-w-2xl">
-          <div className="igreen-badge mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 backdrop-blur-2xl text-xs sm:text-sm text-[#F5F9F0] shadow-sm mb-4">
             <SparkIcon className="w-3.5 h-3.5" />
             <span className="text-xs uppercase font-mono tracking-wider text-[#A8FF35]">
               Contato & Novos Projetos
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-bold tracking-[-0.03em] text-[#F5F9F0]">
+          <h2 className="font-display text-3xl sm:text-5xl font-bold tracking-[-0.035em] text-[#F5F9F0]">
             Vamos conversar sobre o seu próximo projeto?
           </h2>
 
@@ -63,14 +60,14 @@ export function Contact() {
           {/* Action cards */}
           <div className="lg:col-span-5 space-y-4">
             {/* WhatsApp Card */}
-            <div className="igreen-card p-6 sm:p-7 rounded-2xl relative">
+            <div className="p-6 sm:p-7 rounded-2xl bg-[#030d05]/80 border border-white/[0.08] relative">
               <div className="w-11 h-11 rounded-xl bg-[#061809] border border-[#A8FF35]/30 flex items-center justify-center text-[#A8FF35] mb-4">
                 <MessageSquare className="w-5 h-5" />
               </div>
               <div className="text-xs font-mono uppercase tracking-wider text-[#A8FF35]">
                 Canal Mais Rápido
               </div>
-              <div className="text-lg font-bold text-[#F5F9F0] mt-1">WhatsApp Direto</div>
+              <div className="font-display text-lg font-bold text-[#F5F9F0] mt-1">WhatsApp Direto</div>
               <p className="text-xs text-[#F5F9F0]/60 mt-1 leading-relaxed">
                 Ideal para alinhamento rápido de escopo, dúvidas técnicas e propostas comerciais.
               </p>
@@ -78,17 +75,17 @@ export function Contact() {
                 href={personal.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary-igreen mt-5 !h-11 !text-xs !py-0 !pl-4 !pr-1.5"
+                className="group inline-flex items-center gap-2.5 h-11 pl-5 pr-1.5 rounded-full bg-gradient-to-r from-[#D8FFA6] to-[#A8FF35] text-[#0A0F0A] font-semibold text-xs shadow-[inset_0_-2px_2px_rgba(255,255,255,0.6),0_10px_20px_-5px_rgba(168,255,53,0.3)] hover:brightness-110 hover:scale-[1.02] active:scale-95 transition-all mt-5"
               >
                 <span>Chamar no WhatsApp</span>
-                <span className="chip-circle !w-7 !h-7">
+                <span className="w-8 h-8 rounded-full bg-[#0A0F0A] text-[#A8FF35] flex items-center justify-center transition-transform group-hover:rotate-45">
                   <ArrowTopRightIcon className="w-3.5 h-3.5" />
                 </span>
               </a>
             </div>
 
             {/* Email Card */}
-            <div className="igreen-card p-6 rounded-2xl relative">
+            <div className="p-6 rounded-2xl bg-[#030d05]/80 border border-white/[0.08] relative">
               <div className="flex items-center justify-between mb-3">
                 <div className="w-10 h-10 rounded-xl bg-[#061809] border border-[#A8FF35]/30 flex items-center justify-center text-[#A8FF35]">
                   <Mail className="w-5 h-5" />
@@ -120,10 +117,10 @@ export function Contact() {
             </div>
 
             {/* Social links row */}
-            <div className="igreen-card p-6 rounded-2xl flex items-center justify-between">
+            <div className="p-6 rounded-2xl bg-[#030d05]/80 border border-white/[0.08] flex items-center justify-between">
               <div>
                 <div className="text-xs text-white/50 font-mono">Presença Online</div>
-                <div className="text-sm font-bold text-[#F5F9F0] mt-0.5">GitHub · LinkedIn · Instagram</div>
+                <div className="font-display text-sm font-bold text-[#F5F9F0] mt-0.5">GitHub · LinkedIn · Instagram</div>
               </div>
               <div className="flex items-center gap-2">
                 <a
@@ -158,8 +155,8 @@ export function Contact() {
           </div>
 
           {/* Form */}
-          <div className="lg:col-span-7 igreen-card p-8 sm:p-9 rounded-2xl">
-            <h3 className="text-xl font-bold text-[#F5F9F0] mb-2">
+          <div className="lg:col-span-7 p-8 sm:p-9 rounded-2xl bg-[#030d05]/80 border border-white/[0.08]">
+            <h3 className="font-display text-xl font-bold text-[#F5F9F0] mb-2">
               Envie uma mensagem direta
             </h3>
             <p className="text-xs text-[#F5F9F0]/60 mb-6">
@@ -210,18 +207,18 @@ export function Contact() {
                 <button
                   type="button"
                   onClick={handleWhatsAppSubmit}
-                  className="btn-primary-igreen flex-1 justify-center !h-12 !text-xs sm:!text-sm"
+                  className="group flex-1 inline-flex items-center justify-center gap-2.5 h-12 px-6 rounded-full bg-gradient-to-r from-[#D8FFA6] to-[#A8FF35] text-[#0A0F0A] font-semibold text-xs sm:text-sm shadow-[inset_0_-2px_2px_rgba(255,255,255,0.6),0_10px_20px_-5px_rgba(168,255,53,0.3)] hover:brightness-110 active:scale-95 transition-all"
                 >
                   <span>Chamar no WhatsApp</span>
-                  <span className="chip-circle">
-                    <ArrowTopRightIcon className="w-4 h-4" />
+                  <span className="w-7 h-7 rounded-full bg-[#0A0F0A] text-[#A8FF35] flex items-center justify-center transition-transform group-hover:rotate-45">
+                    <ArrowTopRightIcon className="w-3.5 h-3.5" />
                   </span>
                 </button>
 
                 <button
                   type="button"
                   onClick={handleEmailSubmit}
-                  className="btn-ghost-igreen flex-1 justify-center !h-12 !text-xs sm:!text-sm"
+                  className="flex-1 inline-flex items-center justify-center gap-2 h-12 px-6 rounded-full bg-white/[0.04] border border-white/15 backdrop-blur-md text-[#F5F9F0] text-xs sm:text-sm font-medium hover:bg-white/[0.08] hover:border-[#A8FF35]/40 transition-all"
                 >
                   <Mail className="w-4 h-4 text-[#A8FF35]" />
                   <span>Enviar por E-mail</span>

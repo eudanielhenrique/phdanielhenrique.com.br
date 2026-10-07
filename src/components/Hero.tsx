@@ -1,8 +1,8 @@
 "use client";
 
 import { portfolioData } from "@/data/portfolioData";
-import { ArrowTopRightIcon, GithubIcon, LinkedinIcon, InstagramIcon, SparkIcon } from "@/components/Icons";
-import { ArrowDown, CheckCircle2, Terminal } from "lucide-react";
+import { ArrowTopRightIcon, GithubIcon, SparkIcon } from "@/components/Icons";
+import { Bot, Cpu, Database, MessageSquare, Terminal } from "lucide-react";
 
 export function Hero() {
   const { personal, stats } = portfolioData;
@@ -17,29 +17,24 @@ export function Hero() {
   ];
 
   return (
-    <section className="relative min-h-[95vh] pt-36 pb-20 flex flex-col justify-center overflow-hidden">
-      {/* Background Aurora Glows & Atmosphere */}
-      <div className="aurora-glow w-[650px] h-[650px] bg-[#A8FF35]/12 top-0 left-1/2 -translate-x-1/2" />
-      <div className="aurora-glow w-[500px] h-[500px] bg-[#14532d]/30 top-32 -left-48" />
-      <div className="aurora-glow w-[550px] h-[550px] bg-[#052e16]/40 -bottom-20 -right-40" />
+    <section className="relative min-h-[96vh] pt-36 pb-20 flex flex-col justify-center overflow-hidden bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(168,255,53,0.15),transparent_70%),radial-gradient(ellipse_60%_40%_at_20%_40%,rgba(20,83,45,0.2),transparent_60%),radial-gradient(ellipse_60%_40%_at_80%_50%,rgba(5,46,22,0.2),transparent_60%),#010702]">
+      {/* Subtle Dot matrix overlay */}
+      <div className="absolute inset-0 dots-overlay pointer-events-none opacity-40 [mask-image:radial-gradient(ellipse_70%_50%_at_50%_40%,#000_50%,transparent_100%)]" />
 
-      {/* Dot matrix background overlay */}
-      <div className="absolute inset-0 dots-pattern [mask-image:radial-gradient(ellipse_70%_60%_at_50%_35%,#000_60%,transparent_100%)] pointer-events-none opacity-60" />
-
-      {/* Decorative vertical light beam line */}
-      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[1px] h-72 bg-gradient-to-b from-transparent via-[#A8FF35]/30 to-transparent pointer-events-none" />
+      {/* Decorative vertical light sweep line */}
+      <div className="absolute top-24 left-1/2 -translate-x-1/2 w-[1px] h-64 bg-gradient-to-b from-transparent via-[#A8FF35]/35 to-transparent pointer-events-none" />
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 w-full text-center flex flex-col items-center">
         {/* Signature Badge with 4-point Spark */}
-        <div className="igreen-badge mb-8 group cursor-default">
-          <SparkIcon className="w-4 h-4 transition-transform group-hover:rotate-180 duration-500" />
-          <span className="font-medium text-xs sm:text-sm text-[#F5F9F0]">
+        <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 backdrop-blur-2xl text-xs sm:text-sm text-[#F5F9F0] shadow-sm mb-8 hover:border-[#A8FF35]/40 transition-colors">
+          <SparkIcon className="w-4 h-4" />
+          <span className="font-medium">
             {personal.role} · {personal.location}
           </span>
         </div>
 
         {/* Hero Title */}
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-[-0.04em] text-[#F5F9F0] leading-[1.08] max-w-4xl">
+        <h1 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-[-0.04em] text-[#F5F9F0] leading-[1.04] max-w-4xl">
           Automação com n8n & IA.{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D8FFA6] via-[#A8FF35] to-[#7be312]">
             Eliminando o trabalho manual.
@@ -57,15 +52,18 @@ export function Hero() {
           >
             {personal.company}
           </a>
-          ). Conecto ERPs legados, orquestro pipelines com modelos de inteligência artificial e
+          ). Conecto ERPs legados, orquestro fluxos com modelos de inteligência artificial e
           desenvolvo sistemas Full Stack de alta performance para empresas que buscam eficiência real.
         </p>
 
         {/* Action Buttons */}
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <a href="#contato" className="btn-primary-igreen">
+          <a
+            href="#contato"
+            className="group inline-flex items-center gap-3 h-12 sm:h-13 px-7 sm:px-8 rounded-full bg-gradient-to-r from-[#D8FFA6] to-[#A8FF35] text-[#0A0F0A] font-semibold text-sm sm:text-base shadow-[inset_0_-2px_4px_rgba(255,255,255,0.6),0_12px_28px_-6px_rgba(168,255,53,0.35)] hover:brightness-110 hover:scale-[1.02] active:scale-95 transition-all"
+          >
             <span>Iniciar um Projeto</span>
-            <span className="chip-circle">
+            <span className="w-8 h-8 rounded-full bg-[#0A0F0A] text-[#A8FF35] flex items-center justify-center transition-transform group-hover:rotate-45">
               <ArrowTopRightIcon className="w-4 h-4" />
             </span>
           </a>
@@ -74,7 +72,7 @@ export function Hero() {
             href={personal.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-ghost-igreen"
+            className="inline-flex items-center gap-2.5 h-12 sm:h-13 px-7 sm:px-8 rounded-full bg-white/[0.04] border border-white/15 backdrop-blur-md text-[#F5F9F0] text-sm sm:text-base font-medium hover:bg-white/[0.08] hover:border-[#A8FF35]/40 transition-all"
           >
             <GithubIcon className="w-4 h-4 text-[#A8FF35]" />
             <span>Ver GitHub (@eudanielhenrique)</span>
@@ -93,14 +91,73 @@ export function Hero() {
           ))}
         </div>
 
+        {/* Interactive Architecture Flow Preview */}
+        <div className="mt-16 w-full max-w-4xl p-6 sm:p-8 rounded-3xl bg-[#030d05]/80 border border-white/[0.09] backdrop-blur-xl shadow-2xl shadow-black/80 text-left relative overflow-hidden">
+          <div className="flex items-center justify-between border-b border-white/[0.08] pb-4 mb-6">
+            <div className="flex items-center gap-2">
+              <span className="w-3 h-3 rounded-full bg-red-500/80" />
+              <span className="w-3 h-3 rounded-full bg-yellow-500/80" />
+              <span className="w-3 h-3 rounded-full bg-emerald-500/80" />
+              <span className="ml-2 text-xs font-mono text-white/50">
+                pipeline-operacional.n8n · live
+              </span>
+            </div>
+            <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-[#A8FF35]/15 text-[#A8FF35] border border-[#A8FF35]/30">
+              ● Fluxo 100% Automatizado
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 items-center">
+            {/* Step 1 */}
+            <div className="p-4 rounded-xl bg-white/[0.02] border border-white/[0.06] hover:border-[#A8FF35]/30 transition-all">
+              <div className="flex items-center gap-2 text-xs font-mono text-[#A8FF35] mb-1.5">
+                <Database className="w-3.5 h-3.5" />
+                <span>1. ERP / Banco</span>
+              </div>
+              <div className="text-sm font-semibold text-white">Sincronização de Dados</div>
+              <p className="text-[11px] text-white/50 mt-1">Pedidos, clientes & notas fiscais</p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="p-4 rounded-xl bg-white/[0.02] border border-white/[0.06] hover:border-[#A8FF35]/30 transition-all">
+              <div className="flex items-center gap-2 text-xs font-mono text-[#A8FF35] mb-1.5">
+                <Cpu className="w-3.5 h-3.5" />
+                <span>2. n8n Engine</span>
+              </div>
+              <div className="text-sm font-semibold text-white">Tratamento & Regras</div>
+              <p className="text-[11px] text-white/50 mt-1">Triagem sem intervenção humana</p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="p-4 rounded-xl bg-white/[0.02] border border-white/[0.06] hover:border-[#A8FF35]/30 transition-all">
+              <div className="flex items-center gap-2 text-xs font-mono text-[#A8FF35] mb-1.5">
+                <Bot className="w-3.5 h-3.5" />
+                <span>3. Agente com IA</span>
+              </div>
+              <div className="text-sm font-semibold text-white">Decisão & Raciocínio</div>
+              <p className="text-[11px] text-white/50 mt-1">LLMs (Claude / GPT) no contexto</p>
+            </div>
+
+            {/* Step 4 */}
+            <div className="p-4 rounded-xl bg-white/[0.02] border border-white/[0.06] hover:border-[#A8FF35]/30 transition-all">
+              <div className="flex items-center gap-2 text-xs font-mono text-[#A8FF35] mb-1.5">
+                <MessageSquare className="w-3.5 h-3.5" />
+                <span>4. WhatsApp / Ação</span>
+              </div>
+              <div className="text-sm font-semibold text-white">Disparo & Atualização</div>
+              <p className="text-[11px] text-white/50 mt-1">Zapo lib / Nuvemshop / CRM</p>
+            </div>
+          </div>
+        </div>
+
         {/* Stats Grid */}
-        <div className="mt-16 sm:mt-20 w-full grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="mt-14 w-full grid grid-cols-2 lg:grid-cols-4 gap-4">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="igreen-card p-5 sm:p-6 rounded-2xl text-left relative overflow-hidden group"
+              className="p-5 sm:p-6 rounded-2xl bg-[#030d05]/80 border border-white/[0.08] hover:border-[#A8FF35]/35 transition-all text-left relative overflow-hidden group shadow-lg"
             >
-              <div className="text-2xl sm:text-3xl font-extrabold text-[#F5F9F0] font-mono tracking-tight group-hover:text-[#A8FF35] transition-colors">
+              <div className="font-display text-2xl sm:text-3xl font-bold text-[#F5F9F0] tracking-tight group-hover:text-[#A8FF35] transition-colors">
                 {stat.value}
               </div>
               <div className="mt-2 text-xs text-white/50 leading-snug">

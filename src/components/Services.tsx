@@ -22,18 +22,18 @@ export function Services() {
   };
 
   return (
-    <section id="servicos" className="py-28 relative z-10 border-t border-white/5 bg-[#010903]/40">
+    <section id="servicos" className="py-28 relative z-10 border-t border-white/[0.08] bg-[#010702]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
-          <div className="igreen-badge mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 backdrop-blur-2xl text-xs sm:text-sm text-[#F5F9F0] shadow-sm mb-4">
             <SparkIcon className="w-3.5 h-3.5" />
             <span className="text-xs uppercase font-mono tracking-wider text-[#A8FF35]">
               Especialidades & Atuação Real
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-bold tracking-[-0.03em] text-[#F5F9F0]">
+          <h2 className="font-display text-3xl sm:text-5xl font-bold tracking-[-0.035em] text-[#F5F9F0]">
             Como eu ajudo a sua empresa a escalar
           </h2>
 
@@ -48,11 +48,11 @@ export function Services() {
           {services.map((service: ServiceItem) => (
             <div
               key={service.id}
-              className="igreen-card p-8 sm:p-9 rounded-2xl flex flex-col justify-between group"
+              className="p-8 sm:p-9 rounded-2xl bg-[#030d05]/80 border border-white/[0.08] hover:border-[#A8FF35]/40 hover:shadow-[0_12px_36px_-12px_rgba(168,255,53,0.15)] transition-all flex flex-col justify-between group"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">
-                  <div className="w-13 h-13 rounded-2xl bg-[#061809] border border-[#A8FF35]/25 flex items-center justify-center group-hover:scale-105 group-hover:border-[#A8FF35]/60 transition-all shadow-md shadow-[#A8FF35]/5">
+                  <div className="w-12 h-12 rounded-xl bg-[#061809] border border-[#A8FF35]/30 flex items-center justify-center group-hover:scale-105 group-hover:border-[#A8FF35]/60 transition-all shadow-md shadow-[#A8FF35]/5">
                     {renderIcon(service.icon)}
                   </div>
                   {service.badge && (
@@ -62,7 +62,7 @@ export function Services() {
                   )}
                 </div>
 
-                <h3 className="text-xl sm:text-2xl font-bold text-[#F5F9F0] tracking-tight group-hover:text-[#A8FF35] transition-colors">
+                <h3 className="font-display text-xl sm:text-2xl font-bold text-[#F5F9F0] tracking-tight group-hover:text-[#A8FF35] transition-colors">
                   {service.title}
                 </h3>
 
@@ -71,7 +71,7 @@ export function Services() {
                 </p>
 
                 {/* Features checklist */}
-                <ul className="mt-6 space-y-3 border-t border-white/5 pt-6">
+                <ul className="mt-6 space-y-3 border-t border-white/[0.08] pt-6">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#F5F9F0]/80">
                       <CheckCircle2 className="w-4 h-4 text-[#A8FF35] shrink-0 mt-0.5" />
@@ -84,7 +84,7 @@ export function Services() {
               <div className="mt-8 pt-4">
                 <a
                   href="#contato"
-                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-[#A8FF35] group-hover:underline underline-offset-4"
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-[#A8FF35] hover:underline underline-offset-4"
                 >
                   <span>Conversar sobre esta demanda</span>
                   <ArrowTopRightIcon className="w-3.5 h-3.5" />

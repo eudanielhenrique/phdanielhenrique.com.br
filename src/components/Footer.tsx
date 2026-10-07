@@ -2,7 +2,7 @@
 
 import { portfolioData } from "@/data/portfolioData";
 import { ArrowUp } from "lucide-react";
-import { GithubIcon, LinkedinIcon, InstagramIcon, SparkIcon } from "@/components/Icons";
+import { GithubIcon, LinkedinIcon, InstagramIcon } from "@/components/Icons";
 
 export function Footer() {
   const scrollToTop = () => {
@@ -10,18 +10,18 @@ export function Footer() {
   };
 
   return (
-    <footer className="border-t border-white/5 py-12 bg-[#010502] relative z-10">
+    <footer className="border-t border-white/[0.08] py-12 bg-[#010502] relative z-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-3">
           <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-[#D8FFA6] to-[#A8FF35] p-[1px]">
             <div className="w-full h-full bg-[#051208] rounded-[7px] flex items-center justify-center">
-              <span className="font-mono font-black text-xs text-transparent bg-clip-text bg-gradient-to-r from-[#D8FFA6] to-[#A8FF35]">
+              <span className="font-display font-extrabold text-xs text-transparent bg-clip-text bg-gradient-to-r from-[#D8FFA6] to-[#A8FF35]">
                 DH
               </span>
             </div>
           </div>
           <div className="flex flex-col">
-            <span className="text-sm font-bold text-[#F5F9F0]">
+            <span className="font-display text-sm font-bold text-[#F5F9F0]">
               {portfolioData.personal.name}
             </span>
             <span className="text-[11px] text-[#A8FF35]/70 font-mono">

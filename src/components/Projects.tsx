@@ -18,24 +18,21 @@ export function Projects() {
   const filteredProjects =
     filter === "all"
       ? projects
-      : projects.filter((p) => p.category === filter);
+      : projects.filter((p: ProjectItem) => p.category === filter);
 
   return (
-    <section id="projetos" className="py-28 relative z-10 border-t border-white/5 bg-[#010702]">
-      {/* Background soft glow */}
-      <div className="aurora-glow w-[500px] h-[500px] bg-[#A8FF35]/10 top-1/2 left-0 pointer-events-none" />
-
+    <section id="projetos" className="py-28 relative z-10 border-t border-white/[0.08] bg-[#010702]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
-            <div className="igreen-badge mb-4">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 backdrop-blur-2xl text-xs sm:text-sm text-[#F5F9F0] shadow-sm mb-4">
               <SparkIcon className="w-3.5 h-3.5" />
               <span className="text-xs uppercase font-mono tracking-wider text-[#A8FF35]">
                 GitHub & Projetos Reais
               </span>
             </div>
-            <h2 className="text-3xl sm:text-5xl font-bold tracking-[-0.03em] text-[#F5F9F0]">
+            <h2 className="font-display text-3xl sm:text-5xl font-bold tracking-[-0.035em] text-[#F5F9F0]">
               O que eu realmente construo
             </h2>
             <p className="mt-4 text-[#F5F9F0]/60 text-base max-w-xl">
@@ -67,7 +64,7 @@ export function Projects() {
           {filteredProjects.map((project: ProjectItem) => (
             <div
               key={project.id}
-              className="igreen-card p-7 sm:p-8 rounded-2xl flex flex-col justify-between group relative overflow-hidden"
+              className="p-7 sm:p-8 rounded-2xl bg-[#030d05]/80 border border-white/[0.08] hover:border-[#A8FF35]/40 hover:shadow-[0_12px_36px_-12px_rgba(168,255,53,0.15)] transition-all flex flex-col justify-between group"
             >
               <div>
                 <div className="flex items-center justify-between gap-4 mb-4">
@@ -83,7 +80,7 @@ export function Projects() {
                   )}
                 </div>
 
-                <h3 className="text-2xl font-bold text-[#F5F9F0] tracking-tight group-hover:text-[#A8FF35] transition-colors">
+                <h3 className="font-display text-2xl font-bold text-[#F5F9F0] tracking-tight group-hover:text-[#A8FF35] transition-colors">
                   {project.title}
                 </h3>
 
@@ -92,16 +89,16 @@ export function Projects() {
                 </p>
 
                 {/* Impact callout */}
-                <div className="mt-5 p-3.5 rounded-xl bg-[#061809]/60 border border-[#A8FF35]/20 text-xs text-[#A8FF35] font-medium flex items-start gap-2">
+                <div className="mt-5 p-3.5 rounded-xl bg-[#061809] border border-[#A8FF35]/25 text-xs text-[#A8FF35] font-medium flex items-start gap-2">
                   <span className="font-bold text-[#F5F9F0]">Impacto:</span>
                   <span>{project.impact}</span>
                 </div>
               </div>
 
               {/* Tags & Action links */}
-              <div className="mt-6 pt-5 border-t border-white/5">
+              <div className="mt-6 pt-5 border-t border-white/[0.08]">
                 <div className="flex flex-wrap gap-1.5 mb-5">
-                  {project.tags.map((tag, idx) => (
+                  {project.tags.map((tag: string, idx: number) => (
                     <span
                       key={idx}
                       className="text-[11px] font-mono px-2.5 py-1 rounded-md bg-white/[0.04] text-white/60 border border-white/5"

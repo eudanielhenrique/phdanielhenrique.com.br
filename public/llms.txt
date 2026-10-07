@@ -1,0 +1,37 @@
+# Daniel Henrique
+> Desenvolvedor Full Stack & Fundador especializado em automação de processos com n8n e IA, integração de ERPs e ecossistema WhatsApp.
+
+## Resumo Profissional
+- **Nome Completo**: Daniel Henrique
+- **Localização**: Barra de São Francisco, Espírito Santo, Brasil
+- **Atuação**: Desenvolvedor Full Stack & Founder
+- **Experiência**: Desde 2016 (mais de 8 anos desenvolvendo software em produção)
+- **Projetos Entregues**: Mais de 40 sistemas e esteiras de automação entregues
+- **Website Oficial**: https://phdanielhenrique.com.br
+
+## Empresas Fundadas
+1. **Figprod** (https://figprod.com.br) - @fig.prod
+   - Escopo: Desenvolvimento de software sob medida, arquitetura de sistemas escaláveis e consultoria técnica corporativa.
+2. **Bora Automatizar** (https://boraautomatizar.com.br) - @boraautomatizar.com.br
+   - Escopo: Orquestração de fluxos corporativos no n8n, automações com IA generativa e eliminação de trabalho operacional manual.
+3. **BuskaLeads** (https://buskaleads.com.br) - @buskaleads.com.br
+   - Escopo: Motor de inteligência de dados B2B para prospecção outbound em escala e enriquecimento de leads.
+4. **LetsGoPedir** (https://letsgopedir.com.br) - @letsgopedir
+   - Escopo: Food tech, cardápio digital interativo, gestão de pedidos e automação de atendimento no WhatsApp.
+
+## Projetos Notáveis & Soluções Proprietárias
+- **DeskcommCRM**: CRM corporativo omnichannel com automação no WhatsApp.
+- **Zapo**: Biblioteca em Node.js/TypeScript para integração de alto desempenho com o ecossistema do WhatsApp.
+
+## Especialidades Técnicas
+- **Automação & IA**: n8n, LangChain, agentes autônomos, OpenAI API, Anthropic Claude, pipelines de dados.
+- **Frontend**: Next.js (App Router, Server Components), React, TypeScript, Tailwind CSS.
+- **Backend & Dados**: Node.js, TypeScript, PostgreSQL, Redis, Docker, REST APIs, Webhooks.
+- **Integrações Corporativas**: ERPs legados, sistemas de pagamento, webhooks e protocolos de mensageria.
+
+## Links Oficiais & Perfis
+- Website: https://phdanielhenrique.com.br
+- GitHub: https://github.com/eudanielhenrique
+- LinkedIn: https://www.linkedin.com/in/eudanielhenrique/
+- Instagram: https://instagram.com/phdanielhenrque
+- WhatsApp Oficial: https://wa.me/5527999088661

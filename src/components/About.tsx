@@ -26,18 +26,17 @@ export function About() {
           <div className="lg:col-span-7 space-y-7 text-left">
             <div>
               <span className="text-xs font-mono text-[#0060F0] uppercase tracking-wider block mb-2">
-                Trajetória & Filosofia
+                Engenharia & Filosofia
               </span>
               <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-[#F5F5F7]">
-                Engenharia de software voltada a resolver problemas reais
+                Software construído para resolver o mundo real, não para acumular complexidade
               </h2>
             </div>
 
             <p className="text-sm sm:text-base text-[#8A8F99] font-normal leading-relaxed">
-              Atuo na interseção entre engenharia de software, automação corporativa e produtos digitais escaláveis.
-              Como fundador da <strong className="text-[#F5F5F7]">Figprod</strong>, <strong className="text-[#F5F5F7]">Bora Automatizar</strong>, <strong className="text-[#F5F5F7]">BuskaLeads</strong> e <strong className="text-[#F5F5F7]">LetsGoPedir</strong>,
-              construo a ponte entre sistemas legados (ERPs, bancos relacionais) e tecnologias de ponta como agentes de IA,
-              fluxos autônomos no n8n e infraestruturas de alta performance no WhatsApp.
+              Minha atuação combina o rigor da engenharia de software tradicional com a agilidade das esteiras modernas de automação.
+              Desenvolvo a ponte entre sistemas corporativos legados (ERPs, bancos relacionais) e arquiteturas de ponta com agentes de IA,
+              n8n e protocolos de alta vazão no WhatsApp — sempre com foco estrito em estabilidade, retorno sobre o investimento e zero retrabalho humano.
             </p>
 
             {/* Daniel's Real Metrics */}

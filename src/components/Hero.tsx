@@ -21,16 +21,16 @@ export function Hero() {
           <div className="lg:col-span-7 space-y-6 text-left">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.03] border border-[#22262F] text-xs font-mono text-[#0060F0]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#0060F0] animate-pulse" />
-              <span>Automação com n8n · ERPs · WhatsApp & IA</span>
+              <span>ARQUITETURA DE DADOS · n8n · ERPs · WHATSAPP & IA</span>
             </div>
 
             <h1 className="font-display text-4xl sm:text-6xl lg:text-[4.1rem] font-bold tracking-[-0.035em] text-[#F5F5F7] leading-[1.08]">
-              Conectando sistemas. Automatizando com IA.{" "}
-              <span className="text-[#0060F0]">Eliminando processos manuais.</span>
+              Conectando seus sistemas. Automatizando com IA.{" "}
+              <span className="text-[#0060F0]">Eliminando o trabalho manual.</span>
             </h1>
 
             <p className="text-sm sm:text-base text-[#8A8F99] font-normal leading-relaxed max-w-xl">
-              Sou <span className="text-[#F5F5F7] font-medium">{personal.name}</span>, desenvolvedor Full Stack e fundador da{" "}
+              Sou <span className="text-[#F5F5F7] font-medium">{personal.name}</span>, engenheiro de software e fundador da{" "}
               <a
                 href="https://figprod.com.br"
                 target="_blank"
@@ -66,8 +66,8 @@ export function Hero() {
               >
                 LetsGoPedir
               </a>
-              . Desenvolvo esteiras de dados, integro ERPs corporativos e crio ferramentas
-              no ecossistema de WhatsApp para empresas que buscam eficiência operacional sem complexidade.
+              . Construo esteiras autônomas de dados, integro ERPs corporativos e desenvolvo soluções
+              de alto impacto para operações que buscam escala sem retrabalho.
             </p>
 
             {/* Founder quick chips */}

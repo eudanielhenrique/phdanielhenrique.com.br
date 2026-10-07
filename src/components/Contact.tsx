@@ -51,11 +51,11 @@ export function Contact() {
           {/* Heading */}
           <div className="pt-8 pb-6 text-left">
             <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-[#F5F5F7] mb-3">
-              Tem um processo manual que você quer automatizar?
+              Qual processo da sua empresa você quer automatizar hoje?
             </h2>
             <p className="text-sm sm:text-base text-[#8A8F99] leading-relaxed max-w-xl">
-              Seja para integrar seu ERP, estruturar esteiras autônomas no n8n ou construir uma aplicação completa,
-              vamos desenhar a arquitetura certa para a sua operação.
+              Conte qual é o gargalo manual que hoje consome tempo e gera erros na sua equipe.
+              Vamos analisar a viabilidade técnica e desenhar a arquitetura exata para destravar a sua operação.
             </p>
           </div>
 

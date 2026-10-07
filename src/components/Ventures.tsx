@@ -55,16 +55,16 @@ export function Ventures() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-[#22262F] text-[11px] font-mono text-[#0060F0] mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#0060F0] animate-pulse" />
-              <span>ECOSSISTEMA & PRODUTOS</span>
+              <span>ECOSSISTEMA & TRACK RECORD</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-bold tracking-tight text-[#F5F5F7]">
-              Empresas fundadas & frentes operacionais
+              Soluções proprietárias & operações em produção
             </h2>
           </div>
 
           <p className="text-xs sm:text-sm text-[#8A8F99] max-w-md leading-relaxed">
-            Como fundador e engenheiro, construo soluções de alta tração que operam no mercado conectando
-            automação, dados corporativos e produtos digitais.
+            Além de consultoria técnica, desenvolvo e opero produtos de software que resolvem dores reais
+            de mercado — conectando engenharia de dados, esteiras no n8n e arquiteturas de alta vazão.
           </p>
         </div>
 
